@@ -1,0 +1,9 @@
+[workspace]
+members = ["cserver", "cclient"]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1"
+actix-web = "4.3.1"
+env_logger = "0.10.0"
+log = "0.4"

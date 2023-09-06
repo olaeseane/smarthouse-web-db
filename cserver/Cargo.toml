@@ -1,0 +1,23 @@
+[package]
+name = "cserver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "cserver"
+path = "src/lib.rs" # This is where your library code will be stored
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+actix-web = { workspace = true }
+env_logger = { workspace = true }
+log = { workspace = true }
+
+diesel = { version = "2.1.0", features = ["sqlite", "r2d2"] }
+dotenvy = "0.15"
+uuid = { version = "1", features = ["v4", "serde"] }
+
+# smart_house = { path = "../smart_house" }
